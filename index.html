@@ -1,103 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>College Information Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #0055a5;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #003f7f;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        h2 {
-            color: #003366;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Dhaaba</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Akash Institute of Technology University,Delhi</h1>
-        <p>Welcome to the official information portal</p>
-    </header>
+    <div class="container">
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navLogo">CodeHelp da Dhabba</p>
+                        </li>
+                        <li>
+                            <div id="navItems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#departments">Departments</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <main class="contentBox">
+            <!-- item 1 -->
+            <section>
+                <div class="item">
+                    <div class="leftBox">
+                        <h2>Gulab Jamun</h2>
+                        <div>
+                            <h2>Ingredients</h2>
+                            <ul class="imgBox">
+                                <li>1 cup Milk powder</li>
+                                <li>1/4 cup maida</li>
+                                <li>1 tablespoon ghee</li>
+                                <li>1/4 cup milk</li>
+                                <li>1/4 teaspoon baking soda</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Recipe</h2>
+                            <ol class="recipeBox">
+                                <li>Boil 1.5 cups of milk and set aside to cool.</li>
+                                <li>In a mixing bowl, combine milk powder, maida, ghee, and baking soda.</li>
+                                <li>Gradually add the cooled milk to the mixture and knead it into a smooth dough.</li>
+                                <li>Divide the dough into small portions and shape them into smooth balls.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="rightBox">
+                        <img src="jamun.png" alt="Gulab Jamun" />
+                        <div class="overlay">
+                            <span>Click here to Buy</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <div class="container" id="about">
-        <h2>About the College</h2>
-        <p>Akash Institute of Technology University,Delhi is a premier educational institution offering high‑quality education in various fields. Our mission is to empower students with knowledge and skills.</p>
+            <!-- item 2 -->
+            <section>
+                <div class="item">
+                    <div class="leftBox">
+                        <h2>Kaju katli</h2>
+                        <div>
+                            <h2>Ingredients</h2>
+                            <ul class="ingBox">
+                                <li>200g Raw cashews</li>
+                                <li>150g Sugar</li>
+                                <li>1/4 cup water</li>
+                                <li>Silver foil</li>
+                                <li>1 tsp oil</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Recipe</h2>
+                            <ol class="recipeBox">
+                                <li>Grind: Pulse cashew in a blender into a fine powder.</li>
+                                <li>Sieve: Strain the powder to remove any large lumps.</li>
+                                <li>Syrup: Boil sugar and water in a pan until dissolved.</li>
+                                <li>Mix: Combine the cashew powder with the syrup and oil.</li>
+                                <li>Cook: Cook the mixture on low heat for 5-7 minutes until it thickens.</li>
+                                <li>Roll: Transfer the mixture to a greased surface and roll it out with a rolling pin.</li>
+                                <li>Cut: Cut the rolled mixture into diamond shapes and garnish with silver foil.</li>
+                                <li>Serve: Allow the kaju katli to cool completely before serving.</li>
+                                <li>Store: Store in an airtight container for up to a week.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="rightBox">
+                        <img src="kaju.png" alt="Kaju Katli" />
+                        <div class="overlay">
+                            <span>Click here to Buy</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footerBox">
+                <p>Copyright &copy; Akash Dhaaba Pvt Ltd 2023 All Rights Reserved</p>
+            </div>
+        </footer>
     </div>
-
-    <div class="container" id="departments">
-        <h2>Departments</h2>
-        <ul>
-            <li>Computer Science</li>
-            <li>Electronics & Communication</li>
-            <li>Mechanical Engineering</li>
-            <li>Business Administration</li>
-            <li>Humanities</li>
-        </ul>
-    </div>
-
-    <div class="container" id="admissions">
-        <h2>Admissions</h2>
-        <p>Admissions are open for the academic year. Students can apply online through our admission portal.</p>
-    </div>
-
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: akash@university.edu</p>
-        <p>Phone: +91 8400659318</p>
-        <p>Address: Delhi deva Road, City, India</p>
-    </div>
-
-    <footer>
-        <p>© 2025 Akash Institute of Technology University,Delhi. All Rights Reserved.</p>
-        
-    </footer>
 </body>
+
 </html>
